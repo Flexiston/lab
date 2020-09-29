@@ -1,0 +1,68 @@
+<!--
+非原创，本代码来自： http://summer.chyxion.me/
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta http-equiv="keywords" content="BadApple,Bad Apple">
+	<meta http-equiv="description" content="JavaScript BadApple,JavaScript Bad Apple">
+    <link rel="bookmark" type="image/x-icon" href="/favicon.ico" /> 
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+    <title>Bad Apple</title>
+        <style type="text/css">
+            body {
+                margin: 0;
+                padding: 0 auto;
+                background: #000;
+            }
+            #stage {
+                margin: 16px auto;
+                width: 640px;
+            }
+            header a {
+                color: #7f7f7f;
+                font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+            }
+            #progress {
+                color: #7fb77f;
+            }
+            #div_loading {
+                width: 86%;
+                margin: 0 auto;
+                text-align: center;
+                height: 480px;
+                position: relative;
+            }
+            #div_loading img {
+                overflow: auto;
+                margin: auto;
+                position: absolute;
+                top: 0; 
+                left: 0; 
+                bottom: 0; 
+                right: 0;
+                vertical-align: middle;
+            }
+        </style>
+        <script src="js/jquery-min.js" type="text/javascript"></script>
+        <script src="js/badapple.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <a href="/">返回</a>
+            <a href="http://summer.chyxion.me/">原作者主页</a>
+            <span id="progress">0&#37;</span>
+        </header>
+        <div id="div_loading">
+            <img src="images/loading.gif" />
+        </div>
+        <audio id="audio" src=""></audio>
+        <center>
+            <canvas id="stage">Sorry, Your Browser Does Not Support.</canvas>
+        </center>
+    </body>
+</html>

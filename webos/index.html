@@ -1,0 +1,37 @@
+<!--
+非原创，代码来自：http://lab.mkblog.cn/webos/
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>在线OS</title>
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link type="text/css" rel="stylesheet" href="css/css.css"/>
+        <link type="text/css" rel="stylesheet" href="css/jquery.tool.css"/>
+        <link type="text/css" rel="stylesheet" href="css/smartMenu.css"/>
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.tool.js"></script>
+        <script type="text/javascript" src="js/shortcut.js"></script>
+        <script type="text/javascript" src="js/templates.js"></script>
+        <script type="text/javascript" src="js/jquery-smartMenu.js"></script>
+        <script type="text/javascript" src="js/core.js"></script>
+        <script type="text/javascript">
+            $().ready(function(){
+                document.body.onselectstart = document.body.ondrag = function(){return false;}
+                Core.init();
+            });
+        </script>
+    </head>
+    <body id="lxcn" style="background:url(images/background.jpg) repeat right bottom transparent;">
+        <div id="task-bar">
+            <ul class="task-window">                
+            </ul>
+            <ul class="task-panel">
+                <li class="sys" title="系统设定"><b class="">系统设定</b></li>
+            </ul>
+        </div>
+        <div id="desk"><ul></ul></div>
+</body>
+</html>
