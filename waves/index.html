@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ocean Wave Simulation</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet">
+    <link href="waves.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Flexiston/CDN/favicon.ico">
+
+    <!-- 不支持IE8及以下版本浏览器 -->
+    <!--[if lte IE 8]>
+    <script>
+        alert("珍爱生命，远离低版本 IE！");
+        window.location.href="http://lab.mkblog.cn/music/plugns/killie/"
+    </script>
+    <![endif]-->
+
+    <!-- 百度统计 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?09a78278c936e83a2dd13ac95d5898c0";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script> 
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <div id="ui">
+        <div id="camera"><canvas id="profile" width="350" height="105"></canvas>
+            <div id="length"></div>
+            <div id="end"></div>
+            <div id="wind"><span id="wind-speed"></span> <span id="wind-unit">m/s</span>
+                <div id="wind-label">WIND</div>
+            </div>
+            <div id="size"><span id="size-value"></span> <span id="size-unit">m</span></div>
+            <div id="size-label">SIZE</div>
+            <div id="choppiness"></div>
+            <div id="choppiness-label">CHOPPINESS</div>
+        </div>
+    </div><canvas id="simulator"></canvas>
+    <div id="footer"><a href="https://lab.flesx.cn/">Flesxの实验室</a></div>
+    <script src="shared.js"></script>
+    <script src="simulation.js"></script>
+    <script src="ui.js"></script>
+    <script src="waves.js"></script>
+</body>
+
+</html>
